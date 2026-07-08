@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.cart{
+    max-width:800px;
+    margin:40px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#d62828;
+    color:white;
+}
+
+.total{
+    margin-top:20px;
+    text-align:right;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.checkout{
+    margin-top:20px;
+    text-align:right;
+}
+
+.checkout button{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">🍴 Tasty Restaurant</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<div class="cart">
+
+<h2>Your Cart</h2>
+
+<table>
+
+<tr>
+<th>Food</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+</tr>
+
+<tr>
+<td>Veg Biryani</td>
+<td>₹180</td>
+<td>1</td>
+<td>₹180</td>
+</tr>
+
+<tr>
+<td>Pizza</td>
+<td>₹299</td>
+<td>1</td>
+<td>₹299</td>
+</tr>
+
+</table>
+
+<div class="total">
+Grand Total: ₹479
+</div>
+
+<div class="checkout">
+<button onclick="location.href='checkout.html'">
+Proceed to Checkout
+</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Tasty Restaurant</p>
+</footer>
+
+</body>
+</html>
